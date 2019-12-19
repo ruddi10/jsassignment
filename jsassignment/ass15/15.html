@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment15</title>
+</head>
+<body>
+<center><img src="1.jpg" id ="i"></center>
+<center><img src="pre.png" id="prev" onclick="onci()" width="15%">
+<img src="nex.webp" id="next" onclick="onci1()" width="15%"></center>
+<script type="text/javascript">
+	let i=0;
+	document.getElementById('prev').style.visibility="hidden";
+	function onci(){
+		i--;
+		if(i>=0&&i<5)
+		{	document.getElementById("i").src=i+1+".jpg";
+			if(i<4){
+				document.getElementById('next').style.visibility="visible";
+			}
+			if(i===0){
+				event.target.style.visibility="hidden";
+			}
+		}
+	}
+	function onci1(){
+		i++;
+		if(i>0&&i<5)
+		{
+			document.getElementById("i").src=i+1+".jpg";
+			if(i===4)
+			event.target.style.visibility="hidden";
+		document.getElementById('prev').style.visibility="visible";
+
+		}
+
+	}
+</script>
+</body>
+</html>

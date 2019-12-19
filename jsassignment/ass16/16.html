@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+<table>
+
+
+<tbody><tr valign="top" align="center"><td>
+<img src="marble1.webp">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="marble1.webp" id="mar1" class="a">
+</td></tr>
+
+<tr valign="top" align="center" ><td>
+&nbsp;<br><br>
+</td></tr>
+
+
+<tr valign="top" align="center"><td>
+<img src="marble1.webp" id="mar2" class="a">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="marble1.webp" id="mar3" class="a">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="marble1.webp" id="mar4" class="a">
+</td></tr>
+
+<tr valign="top" align="center" ><td>
+&nbsp;<br><br>
+</td></tr>
+
+
+
+<tr valign="top" align="center"><td>
+<img src="marble1.webp" id="mar5" class="a">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="marble1.webp" id="mar6" class="a">
+</td></tr>
+
+
+</tbody></table></center>
+<script type="text/javascript">
+	let myVar;
+	function anime(){
+		document.getElementById("mar5").src="marble1.webp";
+		 myVar = setTimeout(function(){document.getElementById("mar1").src="or.jpg";mar1();},1000)
+	}
+	function mar1(){
+		document.getElementById("mar1").src="marble1.webp";
+		 myVar = setTimeout(function(){document.getElementById("mar2").src="or.jpg";mar2();},1000);
+	}
+	function mar2(){
+		document.getElementById("mar2").src="marble1.webp";
+		 myVar = setTimeout(function(){document.getElementById("mar3").src="or.jpg";mar3();},1000);
+	}
+	function mar3(){
+		document.getElementById("mar3").src="marble1.webp";
+		 myVar = setTimeout(function(){document.getElementById("mar4").src="or.jpg";mar4();},1000);
+	}
+	function mar4(){
+		document.getElementById("mar4").src="marble1.webp";
+		 myVar = setTimeout(function(){document.getElementById("mar5").src="or.jpg";anime();},1000);
+	}
+
+	//document.addEventListener("load",anime);
+	document.querySelector(".a").onmouseover=function(){
+		clearTimeout(myVar);
+	}
+	document.querySelector(".a").onmouseout=anime;
+
+</script>
+</body>
+</html>
+
+
+

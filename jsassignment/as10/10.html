@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<img id="image1" src="1.jpg"  >
+        <img id="image2" src="2.jpg"  >
+        <img id="image3" src="3.jpg"  >
+         <img id="image4" src="download.jpg" onmouseover="mouseover4()" onmouseout="mouseout4()" >
+</body>
+<script type="text/javascript">
+function	mouseover4(){
+	document.getElementById('image1').src="4.jpg";
+	document.getElementById('image2').src="5.jpg";
+	document.getElementById('image3').src="6.jpg";
+	}
+	function mouseout4(){
+		document.getElementById('image1').src="1.jpg";
+		document.getElementById('image2').src="2.jpg";
+		document.getElementById('image3').src="3.jpg";
+	}
+</script>
+</html>
